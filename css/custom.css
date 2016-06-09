@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=Comfortaa);
+
+.weather-board {
+  background-color: #C8F7FF ;
+  height: 80%;
+  max-width: 360px;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: 'Comfortaa', cursive;
+
+}
+
+.container-fluid {
+  height: 100%;
+}
+
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.navbar-right {
+  float: right;
+  margin-right: 0;
+}
+
+.btn-my {
+  color: white;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.btn-my:hover {
+  color: #4AE3FF ;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.btn-my:hover,
+.btn-my:focus,
+.btn-my:active:focus {
+  color: #85ECFF ;
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+#cityName {
+  font-size: 2em;
+  color: white;
+  text-shadow: 0 0 8px #85ECFF;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+#weatherIcon {
+  height:  300px;
+}
+#weatherIcon img {
+  margin-top: 15px;
+}
+.outer-1 {
+  background-color:#A6F1FF;
+  width:100% ; /* You can define it by % also */
+  height:100% ; /* You can define it by % also*/
+  position:relative;
+  border:1px solid #A6F1FF;
+  border-radius: 50%;
+}
+.inner-1 {
+  background-color:#85ECFF;
+  top: 10%; left:10%; /* of the container */
+  width:80%; /* of the outer-1 */
+  height:80%; /* of the outer-1 */
+  position: absolute;
+  border:1px solid #85ECFF;
+  border-radius: 50%;
+}
+.inner-2 {
+  background-color:#4AE3FF;
+  top: 20%; left:20%; /* of the container */
+  width:60%; /* of the inner-1 */
+  height:60%; /* of the inner-1 */
+  position: absolute;
+  border:1px solid #4AE3FF;
+  border-radius: 50%;
+}
+
+#dayTemp {
+  font-size: 5em;
+  color: white;
+  text-shadow: 0 0 8px #85ECFF;
+  font-weight: 100;
+  margin-top: -50px;
+}
+
+#nightTemp {
+  font-size: 3em;
+  text-shadow: 0 0 8px #85ECFF;
+  color : #82E6F9;
+}
