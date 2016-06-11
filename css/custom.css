@@ -25,22 +25,21 @@
   margin-right: 0;
 }
 
-.btn-my {
+.my-btn {
   color: white;
   background-color: transparent;
   border-color: transparent;
 }
 
-.btn-my:hover {
+.my-btn:hover {
   color: #4AE3FF ;
   background-color: transparent;
   border-color: transparent;
 }
 
-.btn-my:hover,
-.btn-my:focus,
-.btn-my:active:focus {
+.my-btn:active {
   color: #85ECFF ;
+  text-shadow: 0 0 20px #1eddff;
   background-color: transparent;
   border-color: transparent;
   box-shadow: none;
@@ -49,7 +48,7 @@
 #cityName {
   font-size: 2em;
   color: white;
-  text-shadow: 0 0 8px #85ECFF;
+  text-shadow: 0 0 8px #;
   font-weight: 600;
   padding-bottom: 15px;
 }
@@ -59,6 +58,7 @@
 }
 #weatherIcon img {
   margin-top: 15px;
+
 }
 .outer-1 {
   background-color:#A6F1FF;
@@ -99,4 +99,9 @@
   font-size: 3em;
   text-shadow: 0 0 8px #85ECFF;
   color : #82E6F9;
+}
+
+.temp {
+  font-size: 0.3em;
+  padding-left: 10px;
 }
