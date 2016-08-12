@@ -10,14 +10,14 @@
 <body>
   <div class="container-fluid">
     <div class="weather-board">
-      <div class="row">
+      <div class="row nav">
         <div class="col-md-12">
           <nav class="navbar navbar-default">
 
               <button type="button" class="my-btn" aria-label="menu">
                 <span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span>
               </button>
-              <button type="button" class="my-btn navbar-right" aria-label="F/C">&deg;F/&deg;C</button>
+              <button type="button" class="my-btn navbar-right unit" aria-label="F/C">&deg;F/&deg;C</button>
 
           </nav>
         </div>
@@ -26,15 +26,15 @@
 
 
       <div class="row">
-        <div class="col-md-1 text-center" id="cityName">city Name</div>
-        <div class="col-md-1" id="weatherIcon">
+        <div class="col-md-12 text-center" id="cityName">City</div>
+        <div class="col-md-12" id="weatherIcon">
           <div class="outer-1">
             <div class="inner-1">
               &nbsp;
             </div>
 
-            <div class="inner-2">
-              <img src="img/tstorm1_night.png" class="img-fluid center-block">
+            <div class="inner-2 weather-icon">
+              <img src="img/tstorm1_night.png" class="img-fluid center-block ">
             </div>
           </div>
 
@@ -44,18 +44,20 @@
 
 
       <div class="row">
-        <div class="col-md-1 text-center" id="dayTemp">54<span class="temp">&deg;F</span></div>
-        <div class="col-md-1 text-center" id="nightTemp">46<span class="temp">&deg;F</span></div>
+        <div class="col-md-12 text-center" id="dayTemp">54<span class="temp">&deg;F</span></div>
+        <div class="col-md-12 text-center" id="nightTemp">46<span class="temp">&deg;F</span></div>
       </div>
 
 
       <div class="row">
-        <div class="col-md-1">chart</div>
+        <div class="col-md-12">chart</div>
       </div>
 
     </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
   <script src="js/custom.js"></script>
   <script src="js/bootstrap.min.js"></script>
 </body>

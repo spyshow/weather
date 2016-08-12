@@ -2,7 +2,7 @@
 
 .weather-board {
   background-color: #C8F7FF ;
-  height: 80%;
+  height: 90%;
   max-width: 360px;
   margin: 10px auto;
   padding: 20px;
@@ -14,10 +14,14 @@
 .container-fluid {
   height: 100%;
 }
-
+.nav {
+  height: 20px;
+}
 .navbar-default {
   background-color: transparent;
   border-color: transparent;
+
+
 }
 
 .navbar-right {
@@ -48,7 +52,7 @@
 #cityName {
   font-size: 2em;
   color: white;
-  text-shadow: 0 0 8px #;
+  text-shadow: 0 0 8px;
   font-weight: 600;
   padding-bottom: 15px;
 }
@@ -91,7 +95,7 @@
   font-size: 5em;
   color: white;
   text-shadow: 0 0 8px #85ECFF;
-  font-weight: 100;
+  font-weight: normal;
   margin-top: -50px;
 }
 
@@ -105,3 +109,4 @@
   font-size: 0.3em;
   padding-left: 10px;
 }
+
