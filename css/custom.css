@@ -1,27 +1,27 @@
 @import url(https://fonts.googleapis.com/css?family=Comfortaa);
-
 .weather-board {
-  background-color: #C8F7FF ;
+  background-color: #C8F7FF;
   height: 90%;
   max-width: 360px;
   margin: 10px auto;
   padding: 20px;
   border-radius: 10px;
   font-family: 'Comfortaa', cursive;
-
 }
 
 .container-fluid {
   height: 100%;
 }
+
 .nav {
   height: 20px;
 }
+
 .navbar-default {
+  position: relative;
+  z-index: 3;
   background-color: transparent;
   border-color: transparent;
-
-
 }
 
 .navbar-right {
@@ -36,13 +36,13 @@
 }
 
 .my-btn:hover {
-  color: #4AE3FF ;
+  color: #4AE3FF;
   background-color: transparent;
   border-color: transparent;
 }
 
 .my-btn:active {
-  color: #85ECFF ;
+  color: #85ECFF;
   text-shadow: 0 0 20px #1eddff;
   background-color: transparent;
   border-color: transparent;
@@ -50,6 +50,7 @@
 }
 
 #cityName {
+  z-index: 1;
   letter-spacing: 2px;
   position: relative;
   top: -40px;
@@ -63,50 +64,45 @@
 #weatherIcon {
   position: relative;
   top: -40px;
-  height:  300px;
-}
-#weatherIcon img {
-  position: absolute;
-  width: 60%;
-  max-width: 80%;
-  top: 10%;
-  left: 10%;
-}
-
-#weatherIcon img:empty{
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  height: 300px;
 }
 
 .outer-1 {
-  background-color:#A6F1FF;
-  width:100% ; /* You can define it by % also */
-  height:100% ; /* You can define it by % also*/
-  position:relative;
-  border:1px solid #A6F1FF;
+  background-color: #A6F1FF;
+  width: 100%;
+  /* You can define it by % also */
+  height: 100%;
+  /* You can define it by % also*/
+  position: relative;
+  border: 1px solid #A6F1FF;
   border-radius: 50%;
 }
+
 .inner-1 {
-  background-color:#85ECFF;
-  top: 10%; left:10%; /* of the container */
-  width:80%; /* of the outer-1 */
-  height:80%; /* of the outer-1 */
+  background-color: #85ECFF;
+  top: 10%;
+  left: 10%;
+  /* of the container */
+  width: 80%;
+  /* of the outer-1 */
+  height: 80%;
+  /* of the outer-1 */
   position: absolute;
-  border:1px solid #85ECFF;
+  border: 1px solid #85ECFF;
   border-radius: 50%;
 }
+
 .inner-2 {
-  background-color:#4AE3FF;
-  top: 20%; left:20%; /* of the container */
-  width:60%; /* of the inner-1 */
-  height:60%; /* of the inner-1 */
+  background-color: #4AE3FF;
+  top: 20%;
+  left: 20%;
+  /* of the container */
+  width: 60%;
+  /* of the inner-1 */
+  height: 60%;
+  /* of the inner-1 */
   position: absolute;
-  border:1px solid #4AE3FF;
+  border: 1px solid #4AE3FF;
   border-radius: 50%;
 }
 
@@ -121,29 +117,35 @@
 #nightTemp {
   font-size: 3em;
   text-shadow: 0 0 8px #85ECFF;
-  color : #82E6F9;
+  color: #82E6F9;
 }
+
 .temps {
   position: relative;
   top: -45px;
 }
+
 .temp {
   font-size: 0.3em;
   padding-left: 10px;
 }
 
 .chart {
-  padding : 0 ;
+  padding: 0;
 }
 
 .myChart {
   width: 100%;
 }
 
-@media screen and (orientation: portrait) {
-  #weatherIcon img  { max-width: 90%; }
-}
+.wi {
+  font-size: 80px;
+  color: white;
+  text-shadow: 0 0 8px;
 
-@media screen and (orientation: landscape) {
-  #weatherIcon img  { max-height: 90%; }
+  width: 60%;
+  height: 60%;
+  min-width: 200px;
+  max-width: 400px;
+  padding: 40px;
 }
